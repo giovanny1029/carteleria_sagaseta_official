@@ -1,0 +1,26 @@
+:root {
+    --blue0: #0067C2;
+    --blue1: #1D95FF;
+    --blue2: #4AAAFF;
+    --blue3: #78BFFF;
+    --blue4: #A5D5FF;
+    --blue5: #CAE6FF;
+    --yellow0: #AEAE06;
+    --yellow1: #D9DA08;
+    --yellow2: #FAFA6E;
+    --yellow3: #FBFB92;
+    --yellow4: #FCFCA4;
+    --yellow5: #FCFCB7;
+    --white: #ffffff;
+    --gray: #9F9F9F;
+    --black: #1E1E1E;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
