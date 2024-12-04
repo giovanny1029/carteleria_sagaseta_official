@@ -8,7 +8,7 @@
 2. database -> Base de datos completa y lista para copiar cada uno en su espacio de trabajo.
 3. // Inserción del código base del proyecto elegido como plantilla
 4. [COMPLETADO] @feature_cx_database -> Hoja con funciones básicas para la conexión con la base de datos.
-5. @feature_header -> Header que comparten todas las páginas en común
+5. [COMPLETADO] @feature_header -> Header que comparten todas las páginas en común
 6. @feature_footer -> Footer que comparten todas las páginas en común
 7. @feature_cx_date -> Conexión a la base de datos para hacer uso de la tabla fecha
 8. @feature_cx_alert -> Conexión a la base de datos para hacer la sección de aviso.
