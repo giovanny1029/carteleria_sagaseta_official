@@ -24,13 +24,14 @@
 1. @feature_main_participate -> Código para la página de participacion con la creación del formulario
 1. @feature_main_vote -> Código para la página de votación con la creación del formulario
 1. @feature_main_gallery -> Código para la página que contiene la galería
+1. @feature_section_alert -> Código para la sección que contiene el aviso
 
 ## Asignación de tareas
 
 - Aileen -> 1, 3, 4, 5, 6
 - Badel -> 2
 - Moisés -> 7, 9, 11
-- David -> 8, 14
+- David -> 8, 14, 21
 - Giovanny -> 10, 18, 19
 - Kevin -> 12, 15, 20
 - Carolina -> 13, 17
