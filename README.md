@@ -12,19 +12,19 @@
 6. [COMPLETADO] @feature_footer -> Footer que comparten todas las páginas en común
 7. @feature_cx_date -> Conexión a la base de datos para hacer uso de la tabla fecha
 8. @feature_cx_alert -> Conexión a la base de datos para hacer la sección de aviso.
-1. @feature_cx_results -> Conexión a la base de datos para hacer el main de resultados.
-1. @feature_cx_participation -> Conexión a la base de datos para hacer el main de participación (formulario).
-1. @feature_cx_vote -> Conexión a la base de datos para hacer el main de votación (formulario).
-1. @feature_cx_gallery -> Conexión a la base de datos para hacer el main de la galería de imágenes.
-1. @feature_section_date -> Código para la explicación de las fechas de los concursos
-1. @feature_section_participate -> Código para la explicación de como proceder a participar con un cartel
-1. @feature_section_vote -> Código para la explicación de como proceder a votar a un cartel
-1. @feature_section_reward -> Código para la explicación de como será la entrega de premios
-1. @feature_main_results -> Código para la página de resultados
-1. @feature_main_participate -> Código para la página de participacion con la creación del formulario
-1. @feature_main_vote -> Código para la página de votación con la creación del formulario
-1. @feature_main_gallery -> Código para la página que contiene la galería
-1. @feature_section_alert -> Código para la sección que contiene el aviso
+9. @feature_cx_results -> Conexión a la base de datos para hacer el main de resultados.
+10. @feature_cx_participation -> Conexión a la base de datos para hacer el main de participación (formulario).
+11. @feature_cx_vote -> Conexión a la base de datos para hacer el main de votación (formulario).
+12. @feature_cx_gallery -> Conexión a la base de datos para hacer el main de la galería de imágenes.
+13. @feature_section_date -> Código para la explicación de las fechas de los concursos
+14. @feature_section_participate -> Código para la explicación de como proceder a participar con un cartel
+15. @feature_section_vote -> Código para la explicación de como proceder a votar a un cartel
+16. @feature_section_reward -> Código para la explicación de como será la entrega de premios
+17. @feature_main_results -> Código para la página de resultados
+18. @feature_main_participate -> Código para la página de participacion con la creación del formulario
+19. @feature_main_vote -> Código para la página de votación con la creación del formulario
+20. @feature_main_gallery -> Código para la página que contiene la galería
+21. @feature_section_alert -> Código para la sección que contiene el aviso
 
 ## Asignación de tareas
 
