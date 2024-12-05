@@ -1,7 +1,7 @@
 <?php
 define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 ?>
-
+<!--Comentario de Kevin en su parte del proyecto-->
 <!DOCTYPE html>
 <html lang="en">
 
