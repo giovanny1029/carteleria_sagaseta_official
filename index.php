@@ -37,6 +37,9 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <main>
     Espacio para el main del index
+    <section class="section_date">
+
+    </section>
   </main>
 
   <footer class="footer_container">
