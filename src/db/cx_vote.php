@@ -21,17 +21,17 @@
                     ");
                     $stmt->execute(['cial' => strtoupper($cial), 'id_cartel' => strtoupper($id_cartel)]);
 
-                    // Pasara un valor por Get[message] con valor voted cuando la votacion se haya completado
+                    // Pasará un valor por Get[message] con valor voted cuando la votacion se haya completado con éxito
                     header("Location: ../pages/vote.php?message=voted")
                 } catch (PDOException $e) {
                     echo "Error al insertar los datos: " . $e->getMessage();
                 }
         } else {
-            // Pasara un valor por Get[message] con valor userVoted cuando el usuario ya haya votado con anterioridad
+            // Pasará un valor por Get[message] con valor userVoted cuando el usuario ya haya votado con anterioridad
             header("Location: ../pages/vote.php?message=userVoted");
         }
     } else {
-        // Pasara un valor por Get[message] con valor userNotValid cuando el usuario introducido no se encuentre en la base de datos
+        // Pasará un valor por Get[message] con valor userNotValid cuando el usuario introducido no se encuentre en la base de datos
         header("Location: ../pages/vote.php?message=userNotValid");
     }
 ?>
