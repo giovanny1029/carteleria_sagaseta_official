@@ -4,7 +4,7 @@
     // Importacion de conexión a la base de datos
     require_once "base/cx_database.php";
 
-    // Función para comrpobar que los datos pasados por parámetro existen en la base de datos
+    // Función para comprobar que los datos pasados por parámetro existen en la base de datos
     function checkUser($cial, $pin){
         try {
         // Crear conexión
@@ -30,7 +30,7 @@
         }
     }
     
-    // Función para comrpobar que el usuario cuyo cial es pasado por parámetro haya participado anteriormente
+    // Función para comprobar que el usuario cuyo cial es pasado por parámetro haya participado anteriormente
     function userParticiped($cial){
         try {
         // Crear conexión
@@ -56,7 +56,7 @@
         }
     }
     
-    // Función para comrpobar que el usuario cuyo cial es pasado por parámetro haya votado anteriormente
+    // Función para comprobar que el usuario cuyo cial es pasado por parámetro haya votado anteriormente
     function userVoted($cial){
         try {
         // Crear conexión
