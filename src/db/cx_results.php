@@ -6,7 +6,7 @@
     $conn = createConnection();
 
     // Función para obtener los carteles ganadores
-    function getResults($idCartel){
+    function getResults(){
         try {
             // Query para obtener los datos
             $stmt = $conn->prepare("
