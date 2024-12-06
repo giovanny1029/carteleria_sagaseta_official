@@ -20,7 +20,7 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <div>
     <section>
-      Espacio para el alert
+      <!-- Espacio para el alert  -->
     </section>
 
     <header class="header_container">
@@ -37,6 +37,9 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <main>
     Espacio para el main del index
+    <section class="section_date">
+
+    </section>
   </main>
 
   <footer class="footer_container">

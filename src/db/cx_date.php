@@ -14,7 +14,6 @@
                 FROM fecha;
             ");
             $stmt->execute();
-        
             return $stmt->fetchAll(PDO::FETCH_BOTH);
         } catch (PDOException $e) {
             echo "Error al realizar la consulta: " . $e->getMessage();
