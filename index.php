@@ -38,12 +38,12 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
   <main>
     Espacio para el main del index
     <section class="section_date">
-      
+      <div class="fecha">
         <p>Presentación de candidaturas:</p>
         <p>Cierre de candidaturas e inicio de periodo de votación:</p>
         <p>Cierre de votación y resultados:</p>
         <p>Entrega de premios:</p>
-      
+      </div>
     </section>
   </main>
 
