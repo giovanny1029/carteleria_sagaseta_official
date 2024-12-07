@@ -2,11 +2,12 @@
     // Importacion de conexión a la base de datos
     require_once "base/cx_database.php";
 
-    // Crear conexión
-    $conn = createConnection();
-
+    
     // Función para obtener los carteles ganadores
     function getResults(){
+        // Crear conexión
+        $conn = createConnection();
+        
         try {
             // Query para obtener los datos
             $stmt = $conn->prepare("
