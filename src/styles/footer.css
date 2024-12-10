@@ -7,12 +7,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
 footer p {
   font-size: 1.5rem;
   color: var(--white);
-  margin: 3rem 0;
+  margin: 0;
+}
+
+footer .nav {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
