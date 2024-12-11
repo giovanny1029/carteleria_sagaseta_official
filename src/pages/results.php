@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
+define('BASE_URL', 'http://localhost/dashboard/proyectos/Hola%20Mundo/carteleria_sagaseta_official-main/');
 ?>
 
 <!DOCTYPE html>
@@ -54,29 +54,36 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
     // Verificar si la consulta devuelve datos
     if ($resultados && count($resultados) > 0) {
-        // Recorrer los resultados y mostrarlos
+        // Limitar a los tres primeros resultados
+        $resultados_top_3 = array_slice($resultados, 0, 3);
+
+        // Recorrer los primeros 3 resultados y mostrarlos
         $top = 1;
-        foreach ($resultados as $resultado) {
+        foreach ($resultados_top_3 as $resultado) {
             echo "<div class='top'>";
             echo "<h4>TOP " . $top++ . "</h4>";
             
             // Mostrar la imagen, asumiendo que 'imagen' contiene la ruta o URL de la imagen
-            echo "<img src='" . htmlspecialchars($resultado['imagen']) . "' alt='Imagen del Cartel' class='cartel-imagen'>";
+            if (!empty($resultado['imagen'])) {
+                echo "<img src='" . htmlspecialchars($resultado['imagen']) . "' alt='Imagen del Cartel' class='cartel-imagen'>";
+            } else {
+                echo "<img src='default_image.jpg' alt='Imagen por defecto' class='cartel-imagen'>"; // Imagen por defecto en caso de que no haya una imagen
+            }
+
             echo "<p><strong>Nombre:</strong> " . htmlspecialchars($resultado['nombre']) . "</p>";
             echo "<p><strong>Curso:</strong> " . htmlspecialchars($resultado['curso']) . "</p>";
             echo "<p><strong>Título:</strong> " . htmlspecialchars($resultado['titulo']) . "</p>";
             echo "</div>";
         }
     } else {
-        echo "<p>No hay resultados disponibles.</p>";
+        echo "<h1>No hay resultados disponibles.</h1>";
     }
     ?>
 </div>
-
-        </div>
-
     </section>
 </main>
+
+
 
   <footer class="footer_container">
     <div class="nav">
