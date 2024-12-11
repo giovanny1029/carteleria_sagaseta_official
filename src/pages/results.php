@@ -1,5 +1,5 @@
 <?php
-define('BASE_URL', 'http://localhost/dashboard/proyectos/Hola%20Mundo/carteleria_sagaseta_official-main/');
+define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 ?>
 
 <!DOCTYPE html>
