@@ -19,9 +19,9 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 <body>
 
   <div>
-    <section class="alert">
+    <div class="alert">
       <!-- Espacio para el alert  -->
-    </section>
+    </div>
 
     <header class="header_container">
       <a href="<?php echo BASE_URL; ?>/index.php" class="logo_sagaseta_container"><img src="<?php echo BASE_URL; ?>/src/img/logo_sagaseta.svg" alt="logo" class="logo_sagaseta"></a>
