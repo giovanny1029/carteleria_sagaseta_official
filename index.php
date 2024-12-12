@@ -19,7 +19,7 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 <body>
 
   <div>
-    <section>
+    <section class="alert">
       <!-- Espacio para el alert  -->
     </section>
 
