@@ -35,6 +35,17 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
     </div>
   </div>
 
+  <section class ="requirements">
+      <h3>Requisitos para participar:</h3>
+      <ul>
+        <li>Los autores deben ser alumnos del centro.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  </section>
+
   <main>
     Espacio para el main del index
   </main>
