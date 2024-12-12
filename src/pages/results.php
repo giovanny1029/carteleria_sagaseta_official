@@ -37,51 +37,55 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <main>
     <section class="container">
-        <section id="entrega-premios">
-            <h2>¡Felicidades a los Ganadores!</h2>
-            <p>Hoy, 29 de mayo, se realizará la entrega de premios del Concurso de Carnaval.</p>
-            <p>Gracias a todos por participar y felicidades a los ganadores.</p>
-            <h3>TOP 3 Carteles</h3>
-        </section>
+      <section id="entrega-premios">
+        <h2>¡Felicidades a los Ganadores!</h2>
+        <p>Hoy, 29 de mayo, se realizará la entrega de premios del Concurso de Carnaval.</p>
+        <p>Gracias a todos por participar y felicidades a los ganadores.</p>
+        <h3>TOP 3 Carteles</h3>
+      </section>
 
-        <div class="resultados">
-    <?php
-    // Asegúrate de incluir correctamente el archivo que contiene la función getResults().
-    require_once "src/db/cx_results.php"; // Ruta al archivo que contiene la función getResults()
+      <div class="resultados">
+        <?php
+        // Asegúrate de incluir correctamente el archivo que contiene la función getResults.
+        require_once "../db/cx_results.php"; // Ajusta la ruta según corresponda
 
-    // Llamada a la función getResults() para obtener los resultados
-    $resultados = getResults();
+        // Llamada a la función getResults para obtener los resultados
+        $resultados = getResults();
 
-    // Verificar si la consulta devuelve datos
-    if ($resultados && count($resultados) > 0) {
-        // Limitar a los tres primeros resultados
-        $resultados_top_3 = array_slice($resultados, 0, 3);
-
-        // Recorrer los primeros 3 resultados y mostrarlos
-        $top = 1;
-        foreach ($resultados_top_3 as $resultado) {
+        // Verificar si la consulta devuelve datos
+        if ($resultados && count($resultados) > 0) {
+          // Recorrer los resultados y mostrarlos
+          $top = 1;
+          foreach ($resultados as $resultado) {
             echo "<div class='top'>";
             echo "<h4>TOP " . $top++ . "</h4>";
-            
-            // Mostrar la imagen, asumiendo que 'imagen' contiene la ruta o URL de la imagen
+
+            // Verificar si la columna 'imagen' contiene datos binarios
             if (!empty($resultado['imagen'])) {
-                echo "<img src='" . htmlspecialchars($resultado['imagen']) . "' alt='Imagen del Cartel' class='cartel-imagen'>";
+              // Convertir los datos binarios de la imagen a base64
+              $imagenBase64 = base64_encode($resultado['imagen']);
+
+              // Asegurarse de que la imagen se muestre correctamente, ajusta el tipo de imagen (png, jpg, etc.)
+              echo "<img src='data:image/jpeg;base64," . $imagenBase64 . "' alt='Imagen del Cartel' class='cartel-imagen'>";
             } else {
-                echo "<img src='default_image.jpg' alt='Imagen por defecto' class='cartel-imagen'>"; // Imagen por defecto en caso de que no haya una imagen
+              // Si no hay imagen, mostrar imagen por defecto
+              echo "<img src='default_image.png' alt='Imagen por defecto' class='cartel-imagen'>";
             }
 
+            // Mostrar el resto de los datos
             echo "<p><strong>Nombre:</strong> " . htmlspecialchars($resultado['nombre']) . "</p>";
             echo "<p><strong>Curso:</strong> " . htmlspecialchars($resultado['curso']) . "</p>";
             echo "<p><strong>Título:</strong> " . htmlspecialchars($resultado['titulo']) . "</p>";
             echo "</div>";
+          }
+        } else {
+          echo "<h1>No hay resultados disponibles.</h1>";
         }
-    } else {
-        echo "<h1>No hay resultados disponibles.</h1>";
-    }
-    ?>
-</div>
+        ?>
+
+      </div>
     </section>
-</main>
+  </main>
 
 
 

@@ -1,33 +1,25 @@
 @import url('./base/base.css');
 @import url('./base/normalize.css');
 
-/* Estilos globales */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 160vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Fuente legible */
-}
-
 .main {
-    flex-grow: 1; /* Expande el contenido para llenar el espacio disponible */
+    flex-grow: 1; 
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgba(92, 90, 90, 0.2);
-    height: 100vh;
+    height: 80%;
+    max-width: 80%;
 }
 
 /* Contenedor principal */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 10px;
     background-color: var(--blue1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: var(--white);
 }
 
 /* Sección de "entrega-premios" */
@@ -38,7 +30,7 @@ body {
 }
 
 #entrega-premios h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     color: var(--white);
 }
@@ -49,8 +41,8 @@ body {
     color: var(--white);
 }
 
-h3 {
-    font-size: 2rem;
+#entrega-premios h3 {
+    font-size: 3rem;
     margin-top: 30px;
     text-align: center;
     color: var(--white, #ffffff);
@@ -59,7 +51,7 @@ h3 {
 /* Contenedor de resultados */
 .resultados {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
     margin-top: 30px;
@@ -69,15 +61,15 @@ h3 {
 /* Carteles */
 .top {
     border: 2px solid #ddd;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    width: 30%; /* 3 carteles por fila */
+    width: 20%; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: var(--white, #ffffff);
     color: var(--black);
     transition: box-shadow 0.3s ease-in-out;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .top:hover {
@@ -85,8 +77,9 @@ h3 {
 }
 
 .cartel-imagen {
-    max-width: 100%;
+    width: 100%; /* Asegura que la imagen no sea mayor que el contenedor */
     height: auto;
+    max-width: 300px; /* Limita el tamaño máximo de la imagen */
     border-radius: 5px;
     margin-bottom: 15px;
     border: 1px solid var(--white);
@@ -104,15 +97,17 @@ h4 {
     font-size: 1.8rem;
     color: var(--white);
 }
-.resultados h1{
+
+.resultados h1 {
     font-size: 1.8rem;
     color: var(--white);
-   
 }
-.resultados p{
+
+.resultados p {
     color: var(--black);
     font-size: 1.8rem;
     margin: 5px 0;
+    padding-top: 20px;
 }
 
 /* Ajuste de responsividad */
@@ -127,13 +122,11 @@ h4 {
         margin: 10px 0; /* Espaciado entre los carteles */
     }
 
-    body {
-        min-height: 190vh; /* Asegura que el cuerpo ocupe más altura en pantallas pequeñas */
-        flex-direction: column; /* Asegura que el contenido se apile verticalmente */
-        
+    .cartel-imagen {
+        max-width: 100%; /* La imagen se ajusta completamente al ancho del contenedor */
     }
 
     .main {
-        height: auto; /* Permite que el contenido se ajuste al tamaño de la pantalla */
+        height: auto;
     }
 }
