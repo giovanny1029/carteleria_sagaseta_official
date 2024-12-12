@@ -35,18 +35,20 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
     </div>
   </div>
 
-  <section class ="requirements">
-      <h3>Requisitos para participar:</h3>
-      <ul>
-        <li>Los autores deben ser alumnos del centro.</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-  </section>
-
   <main>
+    <div class="content_wrapper">
+      <section class ="requirements">
+        <h3>Requisitos para participar:</h3>
+        <ul>
+          <li>Los autores deben ser alumnos del centro.</li>
+          <li>Los carteles deben reflejar elementos alusivos a la cultura, tradiciones, símbolos y patrimonio de Canarias.</li>
+          <li>Se permite cualquier técnica, siempre que el diseño final esté en formato digital.</li>
+          <li>El cartel debe presentarse en formato vertical y en tamaño DIN A3 (3508 x 4961 píxeles). Subido en formato PDF.</li>
+          <li>Cualquier diseño que incluya contenido inapropiado o contrario a los valores de respeto y convivencia será descalificado.</li>
+          <li>Al participar, los autores ceden los derechos de uso y reproducción de sus diseños al centro educativo para posibles exposiciones y publicaciones.</li>
+        </ul>
+      </section>
+    </div>
     Espacio para el main del index
   </main>
 
