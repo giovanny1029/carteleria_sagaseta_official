@@ -23,23 +23,22 @@ html {
 
 html, body {
   margin: 0;
-  padding: 0;
   height: 100%;
 }
 
 body {
-  font-size: 2.4rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 main {
-  padding: 20px;
-  margin-bottom: 80px;
+  flex: 1 0 auto;
+  padding: 2rem 2rem;
+  font-size: 1.8rem;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  flex-shrink: 0;
   width: 100%;
 }
