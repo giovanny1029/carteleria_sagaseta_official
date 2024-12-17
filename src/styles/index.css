@@ -20,14 +20,6 @@ main {
 }
 
 .date-item {
-  margin-bottom: 20px;
-  font-size: 30px;
-  line-height: 1.8;
-  font-weight: bold;
-  text-align: center;
-}
-
-.date-item {
   margin-bottom: 5px;
   font-size: 1.8rem;
   line-height: 1.8;
