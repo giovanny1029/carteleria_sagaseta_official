@@ -1,7 +1,7 @@
 @import url('./base/base.css');
 @import url('./base/normalize.css');
 
-.content_wrapper {
+.requirements_container {
     display: flex;
     justify-content: center;
     align-items: center;

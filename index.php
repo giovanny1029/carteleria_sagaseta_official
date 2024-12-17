@@ -36,7 +36,7 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
   </div>
 
   <main>
-    <div class="content_wrapper">
+    <div class="requirements_container">
       <section class ="requirements">
         <h3>Requisitos para participar:</h3>
         <ul>
