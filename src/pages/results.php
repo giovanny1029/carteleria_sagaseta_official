@@ -1,7 +1,3 @@
-<?php
-define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +5,11 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cartelería - Resultados</title>
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/src/styles/base/normalize.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/src/styles/base/base.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/src/styles/header.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/src/styles/footer.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>/src/styles/results.css">
+  <link rel="stylesheet" href="../styles/base/normalize.css">
+  <link rel="stylesheet" href="../styles/base/base.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/results.css">
 </head>
 
 <body>
@@ -24,14 +20,14 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
     </section>
 
     <header class="header_container">
-      <a href="<?php echo BASE_URL; ?>/index.php" class="logo_sagaseta_container"><img src="<?php echo BASE_URL; ?>/src/img/logo_sagaseta.svg" alt="logo" class="logo_sagaseta"></a>
+      <a href="../../index.php" class="logo_sagaseta_container"><img src="../img/logo_sagaseta.svg" alt="logo" class="logo_sagaseta"></a>
       <h1 class="header_title">Concurso día de Canarias</h1>
     </header>
 
     <div class="nav">
-      <a href="<?php echo BASE_URL; ?>/src/pages/participate.php">Participar</a>
-      <a href="<?php echo BASE_URL; ?>/src/pages/results.php">Resultados</a>
-      <a href="<?php echo BASE_URL; ?>/src/pages/gallery.php">Galería de carteles</a>
+      <a href="participate.php">Participar</a>
+      <a href="results.php">Resultados</a>
+      <a href="gallery.php">Galería de carteles</a>
     </div>
   </div>
 
@@ -47,7 +43,8 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
         <div class="resultados">
     <?php
     // Asegúrate de incluir correctamente el archivo que contiene la función getResults().
-    require_once "src/db/cx_results.php"; // Ruta al archivo que contiene la función getResults()
+
+    require_once "../db/cx_results.php"; // Ruta al archivo que contiene la función getResults()
 
     // Llamada a la función getResults() para obtener los resultados
     $resultados = getResults();
@@ -80,9 +77,9 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <footer class="footer_container">
     <div class="nav">
-      <a href="<?php echo BASE_URL; ?>/src/pages/participate.php">Participar</a>
-      <a href="<?php echo BASE_URL; ?>/src/pages/results.php">Resultados</a>
-      <a href="<?php echo BASE_URL; ?>/src/pages/gallery.php">Galería de carteles</a>
+      <a href="participate.php">Participar</a>
+      <a href="results.php">Resultados</a>
+      <a href="gallery.php">Galería de carteles</a>
     </div>
     <p>2ºDAW IES Fernando Sagaseta</p>
   </footer>

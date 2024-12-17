@@ -1,5 +1,5 @@
-@import url('./base/base.css');
-@import url('./base/normalize.css');
+@import url('base/base.css');
+@import url('base/normalize.css');
 
 .header_container {
   display: flex;
