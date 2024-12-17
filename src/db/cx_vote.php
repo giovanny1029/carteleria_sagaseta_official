@@ -22,7 +22,7 @@
                     $stmt->execute(['cial' => strtoupper($cial), 'id_cartel' => strtoupper($id_cartel)]);
 
                     // Pasará un valor por Get[message] con valor voted cuando la votacion se haya completado con éxito
-                    header("Location: ../pages/vote.php?message=voted")
+                    header("Location: ../pages/vote.php?message=voted");
                 } catch (PDOException $e) {
                     echo "Error al insertar los datos: " . $e->getMessage();
                 }
