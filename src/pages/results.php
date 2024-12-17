@@ -43,6 +43,7 @@
         <div class="resultados">
     <?php
     // Asegúrate de incluir correctamente el archivo que contiene la función getResults().
+
     require_once "../db/cx_results.php"; // Ruta al archivo que contiene la función getResults()
 
     // Llamada a la función getResults() para obtener los resultados
