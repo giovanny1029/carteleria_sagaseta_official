@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cartelería - Vote</title>
-  <link rel="stylesheet" href="src/styles/base/normalize.css">
-  <link rel="stylesheet" href="src/styles/base/base.css">
-  <link rel="stylesheet" href="src/styles/header.css">
-  <link rel="stylesheet" href="src/styles/footer.css">
-  <link rel="stylesheet" href="src/styles/results.css">
+  <link rel="stylesheet" href="../styles/base/normalize.css">
+  <link rel="stylesheet" href="../styles/base/base.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/results.css">
 </head>
 
 <body>
