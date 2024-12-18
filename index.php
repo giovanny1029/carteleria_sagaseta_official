@@ -14,8 +14,8 @@
 
 <body>
   <section class="alert">
-      <p>Esto es una prueba del alert</p>
-      <!-- Espacio para el alert  -->
+    <p>Esto es una prueba del alert</p>
+    <!-- Espacio para el alert  -->
   </section>
 
   <div>
