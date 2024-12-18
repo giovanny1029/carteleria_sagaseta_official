@@ -64,5 +64,12 @@ main {
 .requirements h3 {
   font-size: 2rem;
   margin-bottom: 15px;
+}
+
+.alert {
+  background-color: var(--black);
+  color: var(--white);
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
