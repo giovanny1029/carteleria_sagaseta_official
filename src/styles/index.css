@@ -1,3 +1,5 @@
+@import url('./base/base.css');
+@import url('./base/normalize.css');
 
 main {
   display: flex;
@@ -43,4 +45,34 @@ main {
   font-size: 1.8rem;
   text-align: center;
 
+}
+
+.requirements_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.requirements {
+    background-color: var(--blue5);   
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.requirements ul {
+    font-size: 1.8rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    list-style-type: disc;
+}
+
+.requirements h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
