@@ -46,7 +46,7 @@ main {
 .requirements {
   background-color: var(--blue5);   
   padding: 1px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width: 80%;
@@ -65,4 +65,12 @@ main {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 15px;
+}
+
+.alert {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
