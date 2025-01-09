@@ -45,7 +45,7 @@
                 foreach ($result as $fecha) {
                     // Mostrar cada evento con su fecha y descripción al lado
                     echo "<div class='date-item'>";
-                    echo "<span class='descripcion'>" . htmlspecialchars($fecha['descripcion']) . "</span> : ";
+                    echo "<span class='descripcion'>" . htmlspecialchars($fecha['descripcion']) . "</span> &rarr;";
                     echo "<span class='fechas'>" . htmlspecialchars($fecha['fecha']) . "</span>";
                     echo "</div>";
                 }
