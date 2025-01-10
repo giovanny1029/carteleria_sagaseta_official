@@ -47,7 +47,9 @@
                     // Mostrar cada evento con su fecha y descripción al lado
                     echo "<div class='date-item'>";
                     echo "<span class='descripcion'>" . htmlspecialchars($fecha['descripcion']) . "</span> &rarr;";
-                    echo "<span class='fechas'>" . htmlspecialchars($fecha['fecha']) . "</span>";
+                    echo "<span class='fechas'>" . htmlspecialchars(
+                      DateTime::createFromFormat('Y-m-d', $fecha['fecha'])->format('d-m-Y')
+                    ) . "</span>";
                     echo "</div>";
                 }
             } else {
