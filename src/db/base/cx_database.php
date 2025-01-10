@@ -10,10 +10,10 @@ function enableErrorLog()
 function createConnection()
 {
   try {
-    $host = "fdb1028.awardspace.net";
-    $db = "4562179_carteleria";
-    $user = "4562179_carteleria";
-    $pass = "Sagaseta_1234";
+    $host = "localhost";
+    $db = "carteleria";
+    $user = "root";
+    $pass = "";
     $dns = "mysql:host=$host;dbname=$db";
     $conn = new PDO($dns, $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
