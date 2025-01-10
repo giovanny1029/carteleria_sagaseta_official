@@ -5,10 +5,11 @@
     
     // Función para obtener las fechas y sus descripciones
     function getDates(){
-        // Crear conexión
-        $conn = createConnection();
         
         try {
+            // Crear conexión
+        	$conn = createConnection();
+                
             // Query para obtener los datos
             $stmt = $conn->prepare("
                 SELECT fecha, descripcion
