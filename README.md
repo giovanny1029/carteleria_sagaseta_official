@@ -10,13 +10,13 @@
 4. [COMPLETADO] @feature_cx_database -> Hoja con funciones básicas para la conexión con la base de datos.
 5. [COMPLETADO] @feature_header -> Header que comparten todas las páginas en común
 6. [COMPLETADO] @feature_footer -> Footer que comparten todas las páginas en común
-7. @feature_cx_date -> Conexión a la base de datos para hacer uso de la tabla fecha
+7. [COMPLETADO] @feature_cx_date -> Conexión a la base de datos para hacer uso de la tabla fecha
 8. @feature_cx_alert -> Conexión a la base de datos para hacer la sección de aviso.
-9. @feature_cx_results -> Conexión a la base de datos para hacer el main de resultados.
+9. [COMPLETADO] @feature_cx_results -> Conexión a la base de datos para hacer el main de resultados.
 10. @feature_cx_participation -> Conexión a la base de datos para hacer el main de participación (formulario).
-11. @feature_cx_vote -> Conexión a la base de datos para hacer el main de votación (formulario).
+11. [COMPLETADO] @feature_cx_vote -> Conexión a la base de datos para hacer el main de votación (formulario).
 12. @feature_cx_gallery -> Conexión a la base de datos para hacer el main de la galería de imágenes.
-13. @feature_section_date -> Código para la explicación de las fechas de los concursos
+13. [COMPLETADO] @feature_section_date -> Código para la explicación de las fechas de los concursos
 14. @feature_section_participate -> Código para la explicación de como proceder a participar con un cartel
 15. @feature_section_vote -> Código para la explicación de como proceder a votar a un cartel
 16. @feature_section_reward -> Código para la explicación de como será la entrega de premios

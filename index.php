@@ -35,6 +35,7 @@
   <main>
     <section class="section_date">
         <div class="fecha">
+          <h1>Fechas del Concurso</h1>
             <?php
             // Llamar a la función getDates() que fue incluida en el archivo cx_database.php
             require_once "src/db/cx_date.php";
@@ -46,8 +47,10 @@
                 foreach ($result as $fecha) {
                     // Mostrar cada evento con su fecha y descripción al lado
                     echo "<div class='date-item'>";
-                    echo "<span class='descripcion'>" . htmlspecialchars($fecha['descripcion']) . "</span> : ";
-                    echo "<span class='fechas'>" . htmlspecialchars($fecha['fecha']) . "</span>";
+                    echo "<span class='descripcion'>" . htmlspecialchars($fecha['descripcion']) . "</span> &rarr;";
+                    echo "<span class='fechas'>" . htmlspecialchars(
+                      DateTime::createFromFormat('Y-m-d', $fecha['fecha'])->format('d-m-Y')
+                    ) . "</span>";
                     echo "</div>";
                 }
             } else {
