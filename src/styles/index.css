@@ -1,61 +1,55 @@
-/* Contenedor principal */
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
-  max-width: 1400px; /* Aumenta el ancho máximo permitido */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #eef2f7; /* Añade un fondo suave */
-}
 
-/* Sección de fechas */
+}
 .section_date {
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
   margin: 30px auto;
   padding: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Asegura que ocupe todo el ancho posible */
-  max-width: 1200px; /* Ajusta el ancho máximo de la sección */
+  width: 100%;
+  max-width: 1200px;
 }
-
-/* Elemento de fecha */
 .date-item {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  justify-content: space-between;
   align-items: center;
   background-color: var(--blue3);
   color: var(--black);
-  padding: 20px 30px; /* Incrementa el tamaño del relleno */
-  margin: 20px auto; /* Aumenta la separación entre los elementos */
+  padding: 20px 30px;
+  margin: 20px auto;
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  max-width: 100%; /* Permite que el elemento ocupe el ancho completo del contenedor */
-  width: 100%; /* Hace que los elementos sean más amplios */
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Alineación de elementos dentro del contenedor */
 .date-item span:first-child {
-  flex: 1; /* Ocupa todo el espacio disponible a la izquierda */
-  text-align: left; /* Alinea el texto a la izquierda */
+  flex: 1;/* Ocupa todo el espacio disponible a la izquierda */
+  text-align: left;/* Alinea el texto a la izquierda */
 }
 
 .date-item span:last-child {
   flex: 1; /* Ocupa todo el espacio disponible a la derecha */
-  text-align: right; /* Alinea el texto a la derecha */
+  text-align: right;/* Alinea el texto a la derecha */
 }
 
 .date-item a {
   flex: 0; /* Evita que la flecha ocupe más espacio */
-  text-align: center; /* Centra la flecha */
+  text-align: center;
   margin: 0 10px; /* Espaciado lateral */
   text-decoration: none;
   color: var(--white);
@@ -66,7 +60,7 @@ main {
 @media (max-width: 480px) {
   .date-item {
     font-size: 1rem;
-    padding: 15px 20px; /* Ajusta el relleno para pantallas pequeñas */
+    padding: 15px 20px;/* Ajusta el relleno para pantallas pequeñas */
   }
 
   .date-item span {
@@ -78,7 +72,7 @@ main {
   }
 
   .section_date {
-    padding: 20px; /* Reduce el padding para pantallas pequeñas */
+    padding: 20px;/* Reduce el padding para pantallas pequeñas */
   }
 
   .section_date h2 {
