@@ -15,10 +15,11 @@ main {
   font-family: Arial, sans-serif;
   margin: 30px auto;
   padding: 50px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 1200px;
+}
+.fecha h1{
+  text-align: left;
 }
 .date-item {
   display: flex;
@@ -31,9 +32,10 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   width: 100%;
+
 }
 
 /* Alineación de elementos dentro del contenedor */

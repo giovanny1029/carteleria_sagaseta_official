@@ -34,6 +34,7 @@
   <main>
     <section class="section_date">
         <div class="fecha">
+          <h1>Fechas del Concurso</h1>
             <?php
             // Llamar a la función getDates() que fue incluida en el archivo cx_database.php
             require_once "src/db/cx_date.php";
