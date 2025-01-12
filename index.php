@@ -61,7 +61,7 @@
     </section>
 
     <section class ="requirements">
-      <h3>Requisitos para participar:</h3>
+      <h1>Requisitos para participar:</h1>
       <div class="steps-container">
         <!-- Paso 1 -->
         <div class="step">Paso 1</div>
