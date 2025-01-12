@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <section class ="requirements">
+    <section class="requirements">
       <h1>Requisitos para participar:</h1>
       <div class="steps-container">
         <!-- Paso 1 -->
@@ -83,6 +83,11 @@
         <div class="description">Al participar, los autores ceden los derechos de uso y reproducción de sus diseños al centro educativo para posibles exposiciones y publicaciones.</div>
       </div>
     </section>
+    
+    <section class="results">
+      <!-- Prueba -->
+       
+          </section>
   </main>
 
   <footer class="footer_container">
