@@ -14,10 +14,12 @@
 
 <body>
 
+  <section class="alert">
+    <p>Esto es una prueba del alert</p>
+    <!-- Espacio para el alert  -->
+  </section>
+
   <div>
-    <section>
-      Espacio para el alert
-    </section>
 
     <header class="header_container">
       <a href="../../index.php" class="logo_sagaseta_container"><img src="../img/logo_sagaseta.svg" alt="logo" class="logo_sagaseta"></a>

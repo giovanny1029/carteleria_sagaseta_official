@@ -13,11 +13,12 @@
 </head>
 
 <body>
+  <section class="alert">
+    <p>Esto es una prueba del alert</p>
+    <!-- Espacio para el alert  -->
+  </section>
 
   <div>
-    <section>
-      <!-- Espacio para el alert  -->
-    </section>
 
     <header class="header_container">
       <a href="index.php" class="logo_sagaseta_container"><img src="src/img/logo_sagaseta.svg" alt="logo" class="logo_sagaseta"></a>
@@ -58,7 +59,31 @@
             ?>
         </div>
     </section>
-</main>
+
+    <section class ="requirements">
+      <h3>Requisitos para participar:</h3>
+      <div class="steps-container">
+        <!-- Paso 1 -->
+        <div class="step">Paso 1</div>
+        <div class="description">Los autores deben ser alumnos del centro.</div>
+        <!-- Paso 2 -->
+        <div class="step">Paso 2</div>
+        <div class="description">Los carteles deben reflejar elementos alusivos a la cultura, tradiciones, símbolos y patrimonio de Canarias.</div>
+        <!-- Paso 3 -->
+        <div class="step">Paso 3</div>
+        <div class="description">Se permite cualquier técnica, siempre que el diseño final esté en formato digital.</div>
+        <!-- Paso 4 -->
+        <div class="step">Paso 4</div>
+        <div class="description">El cartel debe presentarse en formato vertical y en tamaño DIN A3 (3508 x 4961 píxeles). Subido en formato PDF.</div>
+        <!-- Paso 5 -->
+        <div class="step">Paso 5</div>
+        <div class="description">Cualquier diseño que incluya contenido inapropiado o contrario a los valores de respeto y convivencia será descalificado.</div>
+        <!-- Paso 6 -->
+        <div class="step">Paso 6</div>
+        <div class="description">Al participar, los autores ceden los derechos de uso y reproducción de sus diseños al centro educativo para posibles exposiciones y publicaciones.</div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer_container">
     <div class="nav">
