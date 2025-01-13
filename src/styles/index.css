@@ -93,6 +93,14 @@ main {
   line-height: 1.5;
 }
 
+.results .awards {
+  padding: 15px;
+  border: 2px solid var(--blue3);
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
+}
+
 /* Ajustes para pantallas más grandes (>=768px) */
 @media (min-width: 768px) {
   main {
@@ -126,5 +134,11 @@ main {
 
   .steps-container {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .results {
+    padding: 50px;
+    max-width: 1200px;
+
   }
 }
