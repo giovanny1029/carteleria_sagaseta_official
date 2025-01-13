@@ -93,12 +93,22 @@ main {
   line-height: 1.5;
 }
 
+.results {
+  margin: 20px auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
 .results .awards {
   padding: 15px;
   border: 2px solid var(--blue3);
   border-radius: 8px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   line-height: 1.5;
+}
+
+.results .awards h3{
+  text-align: center;
 }
 
 /* Ajustes para pantallas más grandes (>=768px) */
@@ -139,6 +149,6 @@ main {
   .results {
     padding: 50px;
     max-width: 1200px;
-
   }
 }
+
