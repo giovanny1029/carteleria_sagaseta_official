@@ -88,12 +88,9 @@
       <h1>Entrega de premios</h1>
         <div class="awards">
           <p> Como parte de las actividades conmemorativas del Día de Canarias, la entrega de premios será uno de los momentos más destacados de este evento tan especial.
-            
           <br><br>
-          
           Esta se hará a lo largo del día en un ambiente lleno de emoción y orgullo, se reconocerá públicamente a las personas que han contribuido al desarrollo cultural, social y artístico de nuestras islas.
           </p>
-
           <h3>¡No te pierdas esta celebración del talento, la dedicación y espíritu canario!</h3>
         </div>
       </section>
