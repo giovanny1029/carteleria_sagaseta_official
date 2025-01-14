@@ -94,6 +94,14 @@ p {
     color: #333; /* Párrafos dentro de los cuadros en negro */
 }
 
+.alert {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* Ajuste para pantallas pequeñas */
 @media (max-width: 768px) {
     .resultados {

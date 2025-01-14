@@ -15,8 +15,9 @@
 <body>
 
   <section class="alert">
-    <p>Esto es una prueba del alert</p>
-    <!-- Espacio para el alert  -->
+    <?php
+      require "../components/component_alert.php";
+    ?>
   </section>
 
   <div>
