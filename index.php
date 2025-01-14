@@ -14,8 +14,24 @@
 
 <body>
   <section class="alert">
-    <p>Esto es una prueba del alert</p>
-    <!-- Espacio para el alert  -->
+    <?php
+      require_once "src/db/cx_alert.php";
+
+      $conexion = createConnection();
+      if ($conexion !== null) {
+          $mensajes = generarMensajes($conexion);
+
+          if (!empty($mensajes)) {
+              foreach ($mensajes as $mensaje) {
+                  echo $mensaje;
+              }
+          } else {
+              echo "<p>No hay alertas para mostrar en este momento.</p>";
+          }
+      } else {
+          echo "<p>Error al conectar con la base de datos.</p>";
+      }
+    ?>
   </section>
 
   <div>
