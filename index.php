@@ -14,23 +14,23 @@
 
 <body>
   <section class="alert">
-    <?php
-      require_once "src/db/cx_alert.php";
+  <?php
+    require_once "src/db/cx_alert.php";
 
-      $conexion = createConnection();
-      if ($conexion !== null) {
-          $mensajes = generarMensajes($conexion);
+    $plazoActual = getPlazoActual();
+    $diasRestantes = getDiasRestantes();
 
-          if (!empty($mensajes)) {
-              foreach ($mensajes as $mensaje) {
-                  echo $mensaje;
-              }
-          } else {
-              echo "<p>No hay alertas para mostrar en este momento.</p>";
-          }
-      } else {
-          echo "<p>Error al conectar con la base de datos.</p>";
-      }
+    switch ($plazoActual) {
+        case 1:
+            echo "<p>¡ATENCIÓN! Quedan " . $diasRestantes . " días para que acabe la presentación de candidaturas.</p>";
+            break;
+        case 2:
+            echo "<p>¡ATENCIÓN! Quedan " . $diasRestantes . " días para que acabe el periodo de votación.</p>";
+            break;
+        case 3:
+            echo "";
+            break;
+    }
     ?>
   </section>
 
