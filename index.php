@@ -15,7 +15,7 @@
 <body>
   <section class="alert">
     <?php
-      require "src/components/component_alert.php";
+      require_once "src/components/component_alert.php";
     ?>
   </section>
 
