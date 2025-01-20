@@ -1,6 +1,14 @@
 @import url('./base/base.css');
 @import url('./base/normalize.css');
 
+.alert {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* Contenedor principal */
 .container {
   max-width: 95%;
