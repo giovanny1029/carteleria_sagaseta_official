@@ -1,42 +1,65 @@
 <?php
-require_once 'base/cx_database.php';
+require_once __DIR__ . '/base/cx_database.php';
 
-$pin = $_POST['pin'];
-$cial = $_POST['cial'];
-$titulo = $_POST['titulo'];
-$descripcion = $_POST['descripcion'];
-$imagen = $_FILES['imagen']['tmp_name'];
+$conn = createConnection();
 
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if (!isset($conn) || $conn === null) {
+    die("Error: La conexión a la base de datos no se estableció correctamente.");
 }
 
-// Validar usuario
-$sqlValidar = "SELECT COUNT(*) AS usuario_valido FROM usuario WHERE cial = ? AND pin = ?";
-$stmt = $conn->prepare($sqlValidar);
-$stmt->bind_param('ss', $cial, $pin);
-$stmt->execute();
-$result = $stmt->get_result()->fetch_assoc();
+try {
+    // Habilitar excepciones en PDO
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if ($result['usuario_valido'] > 0) {
-    // Subir imagen como blob
-    $imagenBlob = file_get_contents($imagen);
+    $pin = $_POST['pin'];
+    $cial = $_POST['cial'];
+    $titulo = $_POST['titulo'];
+    $descripcion = $_POST['descripcion'];
+    $imagen = $_FILES['imagen']['tmp_name'];
 
-    // Insertar cartel
-    $sqlInsertar = "INSERT INTO cartel (titulo, imagen, fecha, descripcion) VALUES (?, ?, CURDATE(), ?)";
-    $stmt = $conn->prepare($sqlInsertar);
-    $stmt->bind_param('sss', $titulo, $imagenBlob, $descripcion);
+    // Validar usuario
+    $sqlValidar = "SELECT COUNT(*) AS usuario_valido FROM usuario WHERE cial = :cial AND pin = :pin";
+    $stmt = $conn->prepare($sqlValidar);
 
-    if ($stmt->execute()) {
-        echo "¡Cartel añadido exitosamente!";
+    $stmt->bindParam(':cial', $cial, PDO::PARAM_STR);
+    $stmt->bindParam(':pin', $pin, PDO::PARAM_STR);
+    $stmt->execute();
+
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($result['usuario_valido'] > 0) {
+        // Comprobar si ya existe un cartel para este usuario xd
+        $sqlComprobar = "SELECT COUNT(*) AS total
+        FROM participacion
+        WHERE id_usuario = :id_usuario";
+        $stmt = $conn->prepare($sqlComprobar);
+        $stmt->bindParam(':id_usuario', $cial, PDO::PARAM_STR);
+        $stmt->execute();
+
+        $cartelExistente = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // if (count($cartelExistente) > 0) {
+        //     echo "Solo puedes insertar un cartel.";
+        // } else {
+            $imagenBlob = file_get_contents($imagen);
+
+            $sqlInsertar = "INSERT INTO cartel (titulo, imagen, fecha, descripcion) VALUES (:titulo, :imagen, CURDATE(), :descripcion)";
+            $stmt = $conn->prepare($sqlInsertar);
+
+            $stmt->bindParam(':titulo', $titulo, PDO::PARAM_STR);
+            $stmt->bindParam(':imagen', $imagenBlob, PDO::PARAM_LOB);
+            $stmt->bindParam(':descripcion', $descripcion, PDO::PARAM_STR);
+
+            if ($stmt->execute()) {
+                echo "¡Cartel añadido exitosamente!";
+            } else {
+                echo "Error al insertar el cartel.";
+            }
+        // }
     } else {
-        echo "Error al insertar el cartel: " . $conn->error;
+        echo "CIAL o PIN incorrectos.";
     }
-} else {
-    echo "CIAL o PIN incorrectos.";
+} catch (PDOException $e) {
+    die("Error: " . $e->getMessage());
 }
-
-$stmt->close();
-$conn->close();
 ?>
