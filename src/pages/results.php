@@ -39,7 +39,7 @@
       <h1>Resultados del concurso</h1>
       <section id="entrega-premios">
         <h2>¡Felicidades a los Ganadores!</h2>
-        <p>Hoy, 29 de mayo, se realizará la entrega de premios del Concurso de Carnaval.</p>
+        <p>Hoy, 29 de mayo, se realizará la entrega de premios del Concurso del día de Canarias.</p>
         <p>Gracias a todos por participar y felicidades a los ganadores.</p>
         <h3>TOP 3 Carteles</h3>
       </section>
