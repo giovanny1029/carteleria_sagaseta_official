@@ -54,7 +54,7 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
       </div>
     </section>
     <div class="form-container">
-      <h1>Votación</h1>
+      <h1 class="votacion">Votación</h1>
       <?php if ($message): ?>
         <div class="message">
           <?php
@@ -76,7 +76,7 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
         </div>
       <?php endif; ?>
 
-      <form action="../scripts/votar.php" method="POST">
+      <form action="../db/cx_vote.php" method="POST">
         <div class="form-group">
           <label for="cial">CIAL (ID de Usuario):</label>
           <input type="text" id="cial" name="cial" required maxlength="20" placeholder="Ingresa tu CIAL">
@@ -85,10 +85,7 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
           <label for="pin">PIN:</label>
           <input type="password" id="pin" name="pin" required maxlength="10" placeholder="Ingresa tu PIN">
         </div>
-        <div class="form-group">
-          <label for="id_cartel">ID del Cartel:</label>
-          <input type="text" id="id_cartel" name="id_cartel" required maxlength="10" placeholder="Ingresa el ID del Cartel">
-        </div>
+        <input type="text" name="id" value=<?php echo $_GET['id']?> hidden>
         <button type="submit" class="btn-submit">Votar</button>
       </form>
     </div>

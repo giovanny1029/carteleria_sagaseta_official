@@ -9,12 +9,16 @@
     font-size: 20px;
 }
 
+
 /* General del body */
-body {
+.formulario-centro {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: var(--background-color); /* Opcional, si deseas un fondo */
 }
 
 /* Main */
@@ -22,7 +26,7 @@ main {
     flex: 1; /* Ocupa el resto del espacio */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Centra el contenido horizontalmente en la izquierda */
+    justify-content: center; /* Centra el contenido horizontalmente */
     padding: 20px;
 }
 
@@ -57,15 +61,16 @@ input, button {
     background-color: var(--white);
     color: var(--black);
     font-size: 1.8rem;
-    border-radius:8px;
+    border-radius: 8px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    text-align:center;
-    line-height:1.5;
-    display:inline-block;
+    text-align: center;
+    line-height: 1.5;
+    display: inline-block;
     text-decoration: none;
-    transition:background-color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .button:hover {
     background-color: var(--blue5);
 }
+

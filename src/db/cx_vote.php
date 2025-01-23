@@ -6,7 +6,7 @@
 
     $cial = $_POST['cial'];
     $pin = $_POST['pin'];
-    $id_cartel = $_POST['id_cartel'];
+    $id_cartel = $_POST['id'];
 
     if(checkUser($cial, $pin)){
         if(!userVoted($cial)){
@@ -22,16 +22,16 @@
                     $stmt->execute(['cial' => strtoupper($cial), 'id_cartel' => strtoupper($id_cartel)]);
 
                     // Pasará un valor por Get[message] con valor voted cuando la votacion se haya completado con éxito
-                    header("Location: ../pages/vote.php?message=voted");
+                    header("Location: ../pages/vote.php?message=voted&id=$id_cartel");
                 } catch (PDOException $e) {
                     echo "Error al insertar los datos: " . $e->getMessage();
                 }
         } else {
             // Pasará un valor por Get[message] con valor userVoted cuando el usuario ya haya votado con anterioridad
-            header("Location: ../pages/vote.php?message=userVoted");
+            header("Location: ../pages/vote.php?message=userVoted&id=$id_cartel");
         }
     } else {
         // Pasará un valor por Get[message] con valor userNotValid cuando el usuario introducido no se encuentre en la base de datos
-        header("Location: ../pages/vote.php?message=userNotValid");
+        header("Location: ../pages/vote.php?message=userNotValid&id=$id_cartel");
     }
 ?>

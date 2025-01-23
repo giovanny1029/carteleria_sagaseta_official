@@ -13,7 +13,7 @@ function createConnection()
     $host = "localhost";
     $db = "carteleria";
     $user = "root";
-    $pass = "";
+    $pass = "1234";
     $dns = "mysql:host=$host;dbname=$db";
     $conn = new PDO($dns, $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

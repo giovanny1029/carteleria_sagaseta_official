@@ -51,6 +51,72 @@ main {
   line-height: 1.5;
 }
 
+/* Vote css */
+
+/* General del body */
+.formulario-centro {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: var(--background-color); 
+}
+
+/* Formulario */
+form {
+  background-color: var(--blue3); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilo para labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* Estilo para inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botón */
+.btn-submit {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: var(--blue5);
+}
+
+
 /* Ajustes para pantallas más grandes (>=768px) */
 @media (min-width: 768px) {
   main {
@@ -75,3 +141,6 @@ main {
   font-weight: bold;
   font-size: 20px;
 }
+.votacion{
+  text-align: center;
+ }
